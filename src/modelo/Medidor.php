@@ -1,6 +1,5 @@
 <?php
 
-
 class Medidor
 {
 
@@ -8,7 +7,6 @@ class Medidor
     private $direccionInstalacion;
     private $costo;
     private $clave;
-
 
     public function __construct($marca, $direccionInstalacion, $costo, $clave)
     {
@@ -57,7 +55,8 @@ class Medidor
         $this->clave = $clave;
     }
 
-    public function hacerArreglo (){
+    public function hacerArreglo()
+    {
         $med['Marca'] = $this->marca;
         $med['Dir Instalacion'] = $this->direccionInstalacion;
         $med['Costo'] = $this->costo;
@@ -65,7 +64,5 @@ class Medidor
         return $med;
 
     }
-
-    
 
 }

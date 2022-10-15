@@ -15,7 +15,11 @@ $medidor2 = new Medidor('Marca 2', 'Sauces Norte', '400', '234567');
 // echo $medidor->getClave();
 
 $res = $cliente1->asignarMedidor($medidor);
-echo "<h3>". $res. "</h3><br>";
+$res3 = $cliente1->asignarMedidor($medidor);
+
+echo "<h3>". $res. "</h3>";
+echo "<h3>". $res3. "</h3>";
+
 $lista1 = $cliente1->getMedidor();
 
 foreach ($lista1 as $clave){
@@ -35,7 +39,7 @@ foreach ($lista1 as $clave){
 }
 
 $res2 = $cliente2->asignarMedidor($medidor2);
-echo "<h3>". $res2. "</h3><br>";
+echo "<h3>". $res2. "</h3>";
 $lista2 = $cliente2->getMedidor();
 foreach ($lista2 as $clave){
     echo "<table>";
