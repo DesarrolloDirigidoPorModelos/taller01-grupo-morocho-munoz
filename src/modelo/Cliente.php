@@ -85,18 +85,18 @@ class Cliente
     $nombre = $this->getNombre();
     $apellido = $this->getApellido();
 
-    $existe = $this->verificarExiste($medidor->getClave());
+    $existe = $this->verificarExisteMedidor($medidor->getClave());
     if($existe==false){
         $this->setMedidor($medidor);
-        return 'Medidor : <b>'.ucfirst($medidor->getMarca()). '</b> <br>Agregado al cliente: '. $nombre . ' ' . $apellido;
+        return 'Medidor : <b>'.ucfirst($medidor->getMarca()). '</b> -  Clave:'. $medidor->getClave().' <br>Agregado al cliente: '. $nombre . ' ' . $apellido;
     }else{
-    return 'EL MEDIDOR # '.$medidor->getClave().' YA EXISTE EN LA LISTA DEL CLIENTE';
+    return 'El medidor con clave # '.$medidor->getClave().' ya existe en la lista del cliente';
 }
 
    
 }
 
-public function verificarExiste($clave)
+public function verificarExisteMedidor($clave)
 {
     $lista = $this->medidor;
 
