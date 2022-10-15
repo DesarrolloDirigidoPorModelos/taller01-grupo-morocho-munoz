@@ -1,11 +1,15 @@
 # taller01
 
-* El proceso para la resolución de problemáticas
-  * Leer la temática
-  * Generar un modelo PIM
-  * Generar un modelo PSM
-  * Generar código en lenguaje de  programación JAVA
+- El proceso para la resolución de problemáticas
 
-* Para generar el modelo PSM y transformar a lenguaje JAVA, se debe usar la herramienta online https://cruise.umple.org/umpleonline/.
+  - Leer la temática
+  - Generar un modelo PIM
+  - Generar un modelo PSM
+  - Generar código en lenguaje de programación JAVA
 
-* Una de las problemáticas debe ser probada.
+- Para generar el modelo PSM y transformar a lenguaje JAVA, se debe usar la herramienta online https://cruise.umple.org/umpleonline/.
+
+- Una de las problemáticas debe ser probada.
+
+\*instrucciones
+para desplegarlo: http://localhost:8080/taller01-grupo-morocho-munoz/src/
